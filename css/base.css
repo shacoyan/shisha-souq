@@ -1,0 +1,106 @@
+body {
+  font-family: var(--font-ja);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-en);
+  line-height: var(--line-height-tight);
+  color: var(--color-dark);
+}
+
+p { margin-bottom: var(--space-md); }
+p:last-child { margin-bottom: 0; }
+
+a { transition: color var(--transition-fast); }
+a:hover { color: var(--color-primary); }
+
+img { height: auto; }
+
+/* no-scroll utility */
+body.no-scroll { overflow: hidden; }
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.section-alt {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.section-alt h2, .section-alt h3 { color: var(--color-white); }
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  font-family: var(--font-ja);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  letter-spacing: 0.1em;
+}
+
+.section-alt .section-subtitle { color: rgba(255,255,255,0.6); }
+
+.gold-line {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--color-primary);
+  margin: var(--space-md) auto var(--space-2xl);
+}
+
+.page-hero {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: var(--color-white);
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-md);
+}
+
+.page-hero p {
+  color: rgba(255,255,255,0.7);
+  font-size: var(--font-size-lg);
+}
+
+.breadcrumb {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  color: rgba(255,255,255,0.6);
+  margin-top: var(--space-lg);
+}
+
+.breadcrumb a { color: rgba(255,255,255,0.6); }
+.breadcrumb a:hover { color: var(--color-primary); }
+.breadcrumb span { color: var(--color-primary); }

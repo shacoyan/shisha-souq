@@ -1,0 +1,98 @@
+.about-concept {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.about-concept-text h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-lg);
+}
+
+.about-concept-text p { color: var(--color-text-light); }
+
+.about-concept-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 4rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.gallery-item {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img { transform: scale(1.05); }
+
+.gallery-placeholder {
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(201,168,76,0.4);
+  font-size: 2rem;
+}
+
+.staff-message {
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3xl);
+  text-align: center;
+  position: relative;
+}
+
+.staff-message::before {
+  content: '"';
+  font-family: var(--font-en);
+  font-size: 8rem;
+  color: rgba(201,168,76,0.15);
+  position: absolute;
+  top: -20px;
+  left: var(--space-2xl);
+  line-height: 1;
+}
+
+.staff-message blockquote {
+  font-size: var(--font-size-lg);
+  color: rgba(255,255,255,0.85);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--space-xl);
+  position: relative;
+  z-index: 1;
+}
+
+.staff-message cite {
+  font-style: normal;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+  .about-concept { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
