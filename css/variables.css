@@ -1,14 +1,14 @@
 :root {
-  --color-primary: #C9A84C;
-  --color-primary-dark: #A8882A;
-  --color-dark: #0D1B2A;
-  --color-dark-2: #1A2E42;
-  --color-bg: #F5F0E8;
-  --color-bg-2: #EDE7DC;
+  --color-primary: #D4863A;
+  --color-primary-dark: #B56E20;
+  --color-dark: #2C1A0E;
+  --color-dark-2: #3D2410;
+  --color-bg: #FBF7F2;
+  --color-bg-2: #F3EDE5;
   --color-white: #FFFFFF;
-  --color-text: #333333;
-  --color-text-light: #666666;
-  --color-border: #E0D8CC;
+  --color-text: #3A2A1A;
+  --color-text-light: #7A6050;
+  --color-border: #E8DDD0;
 
   --font-en: 'Georgia', 'Times New Roman', serif;
   --font-ja: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;

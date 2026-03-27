@@ -57,11 +57,26 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">入場料</h2>
+      <h2 class="section-title">チャージ</h2>
       <span class="gold-line"></span>
-      <div class="admission-box">
-        <div><div class="label">入場料（お一人様）</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);margin-top:4px;">シーシャ料金は別途</div></div>
-        <div><div class="amount">¥550</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);margin-bottom:var(--space-4xl);">
+        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
+          <div><div class="label">チャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">お一人様・シーシャ料金別途</small></div></div>
+          <div><div class="amount">¥550</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+        </div>
+        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
+          <div><div class="label">深夜チャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">深夜帯のみ追加</small></div></div>
+          <div><div class="amount">¥550</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+        </div>
+        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
+          <div><div class="label">シェアチャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">シーシャを2名でシェアの場合</small></div></div>
+          <div><div class="amount">¥1,100</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+        </div>
+      </div>
+      <div style="margin-top:calc(-1 * var(--space-3xl));margin-bottom:var(--space-4xl);">
+        <div class="notice">
+          <strong>チャージについて：</strong> チャージはご来店時にお一人様ごとにいただきます。深夜チャージは深夜帯（詳しくは店頭にてご確認ください）に加算されます。シェアチャージはシーシャを2名でご利用の場合にいただきます。
+        </div>
       </div>
 
       <h2 class="section-title">シーシャ料金</h2>
@@ -100,7 +115,7 @@
           <tr><th>カテゴリ</th><th>内容</th><th>料金（税込）</th></tr>
         </thead>
         <tbody>
-          <tr><td>ソフトドリンク</td><td>コーラ、ジュース、ウォーター 他</td><td class="price-amount">¥550〜</td></tr>
+          <tr><td>ソフトドリンク</td><td>コーラ、ジュース 他</td><td class="price-amount">¥550〜</td></tr>
           <tr><td>コーヒー・紅茶</td><td>ホット・アイス各種</td><td class="price-amount">¥660〜</td></tr>
           <tr><td>アルコール</td><td>ビール・ハイボール・カクテル 他</td><td class="price-amount">¥770〜</td></tr>
           <tr><td>フード</td><td>ケーキ・デザート 他</td><td class="price-amount">¥660〜</td></tr>
@@ -119,7 +134,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo">Shisha Cafe Souq</div>
+    <div class="footer-logo">シーシャカフェ吸暮</div>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
       <ul>
         <li><a href="menu/">メニュー</a></li><li><a href="price/">料金</a></li><li><a href="about/">店舗紹介</a></li>
@@ -140,7 +155,7 @@
       <p>TEL: <a href="tel:05015635961">050-1563-5961</a></p>
       <p>営業時間: 13:00〜29:00（毎日営業）</p>
     </div>
-    <p class="copyright">&copy; 2026 Shisha Cafe Souq. All rights reserved.</p>
+    <p class="copyright">&copy; 2026 シーシャカフェ吸暮. All rights reserved.</p>
   </div>
 </footer>
 <script src="js/main.js"></script>

@@ -111,4 +111,5 @@
 @media (max-width: 768px) {
   .flavor-grid { grid-template-columns: repeat(2, 1fr); }
   .menu-list-item { flex-direction: column; align-items: flex-start; }
+  .menu-drink-grid, .menu-food-grid { grid-template-columns: 1fr !important; }
 }
