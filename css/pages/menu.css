@@ -69,10 +69,6 @@
   line-height: 1.5;
 }
 
-/* ========== FOOD GRID ORDER (desktop: left=text / right=image) ========== */
-.menu-food-grid img   { order: 2; }
-.menu-food-grid > div { order: 1; }
-
 /* ========== DRINK / FOOD ========== */
 .menu-section-title {
   font-size: var(--font-size-2xl);
