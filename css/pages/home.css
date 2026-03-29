@@ -12,6 +12,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%);
 }
 
@@ -19,6 +20,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: radial-gradient(ellipse at 60% 50%, rgba(201,168,76,0.12) 0%, transparent 60%);
   pointer-events: none;
 }
