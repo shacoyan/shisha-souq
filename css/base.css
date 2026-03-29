@@ -92,15 +92,28 @@ body.no-scroll { overflow: hidden; }
 }
 
 .breadcrumb {
-  display: flex;
-  gap: var(--space-sm);
-  align-items: center;
-  justify-content: center;
   font-size: var(--font-size-sm);
   color: rgba(255,255,255,0.6);
   margin-top: var(--space-lg);
 }
 
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li + li::before {
+  content: "/";
+  margin: 0 var(--space-sm);
+  color: rgba(255,255,255,0.6);
+}
+
 .breadcrumb a { color: rgba(255,255,255,0.6); }
 .breadcrumb a:hover { color: var(--color-primary); }
-.breadcrumb span { color: var(--color-primary); }
+.breadcrumb li:last-child span { color: var(--color-primary); }
