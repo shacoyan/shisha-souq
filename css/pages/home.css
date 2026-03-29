@@ -19,6 +19,8 @@
   position: relative;
   z-index: 1;
   max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-eyebrow {
@@ -53,6 +55,7 @@
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-scroll {
