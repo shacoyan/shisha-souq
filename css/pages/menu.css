@@ -69,6 +69,10 @@
   line-height: 1.5;
 }
 
+/* ========== FOOD GRID ORDER (desktop: left=text / right=image) ========== */
+.menu-food-grid img   { order: 2; }
+.menu-food-grid > div { order: 1; }
+
 /* ========== DRINK / FOOD ========== */
 .menu-section-title {
   font-size: var(--font-size-2xl);
@@ -112,9 +116,6 @@
   .flavor-grid { grid-template-columns: repeat(2, 1fr); }
   .menu-list-item { flex-direction: column; align-items: flex-start; }
   .menu-drink-grid, .menu-food-grid { grid-template-columns: 1fr !important; }
-  .menu-food-grid img {
-    order: -1;
-  }
   .menu-drink-grid img,
   .menu-food-grid img {
     height: 240px;
