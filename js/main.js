@@ -3,19 +3,37 @@ const hamburger = document.getElementById('hamburger');
 const globalNav = document.getElementById('globalNav');
 
 if (hamburger && globalNav) {
+  function openMenu() {
+    hamburger.classList.add('active');
+    globalNav.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('no-scroll');
+
+    // 閉じるボタンを動的追加
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'nav-close';
+    closeBtn.setAttribute('aria-label', 'メニューを閉じる');
+    closeBtn.addEventListener('click', closeMenu);
+    globalNav.appendChild(closeBtn);
+  }
+
   function closeMenu() {
     hamburger.classList.remove('active');
     globalNav.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('no-scroll');
+
+    // 閉じるボタンを削除
+    const closeBtn = globalNav.querySelector('.nav-close');
+    if (closeBtn) closeBtn.remove();
   }
 
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    globalNav.classList.toggle('open');
-    const isOpen = globalNav.classList.contains('open');
-    hamburger.setAttribute('aria-expanded', isOpen);
-    document.body.classList.toggle('no-scroll', isOpen);
+    if (globalNav.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
   // ナビリンククリックで閉じる
