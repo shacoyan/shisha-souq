@@ -109,11 +109,11 @@
 }
 
 .footer-logo {
-  font-family: var(--font-en);
-  font-size: var(--font-size-2xl);
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+  font-size: var(--font-size-xl);
   color: var(--color-primary);
   margin-bottom: var(--space-2xl);
-  letter-spacing: 0.05em;
+  font-weight: bold;
 }
 
 .footer-nav ul {

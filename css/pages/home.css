@@ -25,14 +25,16 @@
 
 .hero-eyebrow {
   display: inline-block;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xl);
   color: var(--color-primary);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: var(--space-lg);
-  border: 1px solid rgba(201,168,76,0.4);
-  padding: var(--space-xs) var(--space-md);
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-xl);
+  border: 2px solid var(--color-primary);
+  padding: var(--space-sm) var(--space-2xl);
   border-radius: var(--radius-full);
+  font-weight: bold;
+  background: rgba(212,134,58,0.12);
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
 }
 
 .hero h1 {
