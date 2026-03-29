@@ -91,4 +91,7 @@
 @media (max-width: 768px) {
   .price-cards { grid-template-columns: 1fr; }
   .admission-box { flex-direction: column; gap: var(--space-md); text-align: center; }
+  .charge-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
