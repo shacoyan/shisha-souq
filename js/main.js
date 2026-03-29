@@ -3,6 +3,13 @@ const hamburger = document.getElementById('hamburger');
 const globalNav = document.getElementById('globalNav');
 
 if (hamburger && globalNav) {
+  function closeMenu() {
+    hamburger.classList.remove('active');
+    globalNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('no-scroll');
+  }
+
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     globalNav.classList.toggle('open');
@@ -13,12 +20,17 @@ if (hamburger && globalNav) {
 
   // ナビリンククリックで閉じる
   globalNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      globalNav.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('no-scroll');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  // オーバーレイ背景クリックで閉じる
+  globalNav.addEventListener('click', (e) => {
+    if (e.target === globalNav) closeMenu();
+  });
+
+  // ESCキーで閉じる
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && globalNav.classList.contains('open')) closeMenu();
   });
 }
 
