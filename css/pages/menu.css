@@ -120,3 +120,8 @@
     border-radius: var(--radius-md);
   }
 }
+
+@media (min-width: 769px) {
+  .menu-food-grid img   { order: 2; }
+  .menu-food-grid > div { order: 1; }
+}
