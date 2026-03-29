@@ -90,8 +90,16 @@
 
 @media (max-width: 768px) {
   .price-cards { grid-template-columns: 1fr; }
-  .admission-box { flex-direction: column; gap: var(--space-md); text-align: center; }
+  .price-card { padding: var(--space-xl) var(--space-md); }
+  .admission-box {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+  }
   .charge-grid {
     grid-template-columns: 1fr !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-2xl) !important;
   }
 }
