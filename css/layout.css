@@ -116,6 +116,13 @@
   font-weight: bold;
 }
 
+.footer-logo img {
+  height: 72px;
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .footer-nav ul {
   display: flex;
   flex-wrap: wrap;
