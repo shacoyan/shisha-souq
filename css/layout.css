@@ -222,7 +222,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
