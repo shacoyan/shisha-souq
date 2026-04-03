@@ -117,3 +117,31 @@ body.no-scroll { overflow: hidden; }
 .breadcrumb a { color: rgba(255,255,255,0.6); }
 .breadcrumb a:hover { color: var(--color-primary); }
 .breadcrumb li:last-child span { color: var(--color-primary); }
+
+.text-center { text-align: center; }
+
+.section-bg-2 { background: var(--color-bg-2); }
+
+/* ========== FADE-IN ANIMATION ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ========== UTILITY ========== */
+.container-narrow { max-width: 800px; }
+
+.icon-inline {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.mt-xl { margin-top: var(--space-xl); }
+.mt-3xl { margin-top: var(--space-3xl); }

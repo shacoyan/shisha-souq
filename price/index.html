@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <base href="/shisha-souq/">
+  <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>料金システム - シーシャカフェの利用料金 | Shisha Cafe Souq</title>
   <meta name="description" content="Shisha Cafe Souqの料金案内。入場料¥550、シーシャ1時間¥1,870〜。シンプルでわかりやすい料金体系。大阪・天満橋のシーシャカフェ。">
@@ -32,8 +33,9 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:40px;width:auto;vertical-align:middle;"></a>
+    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="header-logo-img"></a>
     <nav class="global-nav" id="globalNav" aria-label="グローバルナビゲーション">
+      <button class="nav-close" aria-label="メニューを閉じる"></button>
       <ul>
         <li><a href="./">HOME</a></li><li><a href="menu/">メニュー</a></li>
         <li><a href="price/" aria-current="page">料金</a></li>
@@ -64,21 +66,21 @@
     <div class="container">
       <h2 class="section-title">チャージ</h2>
       <span class="gold-line"></span>
-      <div class="charge-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);margin-bottom:var(--space-4xl);">
-        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
-          <div><div class="label">チャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">お一人様・シーシャ料金別途</small></div></div>
-          <div><div class="amount">¥550</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+      <div class="charge-grid">
+        <div class="admission-box admission-box--column">
+          <div><div class="label">チャージ<br><small class="charge-sub">お一人様・シーシャ料金別途</small></div></div>
+          <div><div class="amount">¥550</div><div class="charge-tax">税込</div></div>
         </div>
-        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
-          <div><div class="label">深夜チャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">深夜帯のみ追加</small></div></div>
-          <div><div class="amount">¥550</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+        <div class="admission-box admission-box--column">
+          <div><div class="label">深夜チャージ<br><small class="charge-sub">深夜帯のみ追加</small></div></div>
+          <div><div class="amount">¥550</div><div class="charge-tax">税込</div></div>
         </div>
-        <div class="admission-box" style="flex-direction:column;gap:var(--space-sm);text-align:center;">
-          <div><div class="label">シェアチャージ<br><small style="font-size:var(--font-size-xs);opacity:.6;">シーシャを2名でシェアの場合</small></div></div>
-          <div><div class="amount">¥1,100</div><div style="font-size:var(--font-size-sm);color:rgba(255,255,255,0.5);">税込</div></div>
+        <div class="admission-box admission-box--column">
+          <div><div class="label">シェアチャージ<br><small class="charge-sub">シーシャを2名でシェアの場合</small></div></div>
+          <div><div class="amount">¥1,100</div><div class="charge-tax">税込</div></div>
         </div>
       </div>
-      <div style="margin-top:calc(-1 * var(--space-3xl));margin-bottom:var(--space-4xl);">
+      <div class="charge-notice">
         <div class="notice">
           <strong>チャージについて：</strong> チャージはご来店時にお一人様ごとにいただきます。深夜チャージは23:00以降に加算されます。シェアチャージはシーシャを2名でご利用の場合にいただきます。
         </div>
@@ -123,7 +125,7 @@
         </tbody>
       </table>
 
-      <div class="notice" style="margin-top:var(--space-xl);">
+      <div class="notice mt-xl">
         <strong>ご注意：</strong><br>
         ・20歳未満のご入場はお断りしております。<br>
         ・外部からのお飲み物のお持ち込みはご遠慮ください。お食べ物の持ち込みは可能です。<br>
@@ -135,7 +137,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:44px;width:auto;display:block;margin-bottom:8px;"><span>シーシャカフェ吸暮</span></div>
+    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="footer-logo-img"><span>シーシャカフェ吸暮</span></div>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
       <ul>
         <li><a href="menu/">メニュー</a></li><li><a href="price/">料金</a></li><li><a href="about/">店舗紹介</a></li>
@@ -162,3 +164,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

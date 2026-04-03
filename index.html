@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <base href="/shisha-souq/">
+  <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shisha Cafe Souq（スーク）- 大阪天満橋のシーシャカフェ</title>
   <meta name="description" content="大阪・天満橋駅徒歩3分のシーシャカフェ。100種類以上のフレーバー、全席Wi-Fi・電源完備。リモートワークにも最適な至極のくつろぎ空間。営業時間13:00〜29:00。">
@@ -65,17 +66,14 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/home.css">
-  <style>
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: none; }
-  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:40px;width:auto;vertical-align:middle;"></a>
+    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="header-logo-img"></a>
     <nav class="global-nav" id="globalNav" aria-label="グローバルナビゲーション">
+      <button class="nav-close" aria-label="メニューを閉じる"></button>
       <ul>
         <li><a href="./" aria-current="page">HOME</a></li>
         <li><a href="menu/">メニュー</a></li>
@@ -95,7 +93,7 @@
 
 <main>
   <!-- ヒーロー -->
-  <section class="hero" style="background-image:url('images/hero-bg.jpg');background-size:cover;background-position:center;">
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
         <span class="hero-eyebrow">シーシャカフェ吸暮</span>
@@ -113,22 +111,22 @@
   <!-- 特徴 -->
   <section class="features-section">
     <div class="container">
-      <h2 class="section-title" style="color:#fff;">Why Souq?</h2>
+      <h2 class="section-title">Why Souq?</h2>
       <span class="gold-line"></span>
       <p class="section-subtitle">スークが選ばれる3つの理由</p>
       <div class="grid-3">
         <div class="feature-card fade-in">
-          <div class="feature-icon"><img src="images/gallery-flavor-shelf.jpg" alt="フレーバー" style="width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;"></div>
+          <div class="feature-icon"><img src="images/gallery-flavor-shelf.jpg" alt="フレーバー" class="feature-icon-img"></div>
           <h3 class="feature-title">100種類以上のフレーバー</h3>
           <p class="feature-text">フルーツ系からミント系、スイーツ系まで。あなただけのお気に入りを見つけてください。ノンニコチンも充実。</p>
         </div>
         <div class="feature-card fade-in">
-          <div class="feature-icon"><img src="images/wifi.jpg" alt="Wi-Fi" style="width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;"></div>
+          <div class="feature-icon"><img src="images/wifi.jpg" alt="Wi-Fi" class="feature-icon-img"></div>
           <h3 class="feature-title">全席Wi-Fi・電源完備</h3>
           <p class="feature-text">高速Wi-Fiと全席電源を完備。リモートワークやオンライン作業も快適にお楽しみいただけます。</p>
         </div>
         <div class="feature-card fade-in">
-          <div class="feature-icon"><img src="images/gallery-private-room.jpg" alt="ソファ" style="width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;"></div>
+          <div class="feature-icon"><img src="images/gallery-private-room.jpg" alt="ソファ" class="feature-icon-img"></div>
           <h3 class="feature-title">ふかふかのソファ空間</h3>
           <p class="feature-text">全席ゆったりソファで、身も心もリラックス。友人との会話も、一人の時間も、最高の空間で。</p>
         </div>
@@ -144,7 +142,7 @@
       <p class="section-subtitle">豊富なラインナップ</p>
       <div class="grid-3">
         <div class="card fade-in">
-          <img src="images/gallery-shisha-set.jpg" alt="シーシャ" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/gallery-shisha-set.jpg" alt="シーシャ" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">シーシャ</h3>
             <p class="card-text">100種類以上のフレーバーを取り揃え。フルーツ・ミント・スイーツなど多彩なラインナップ。</p>
@@ -152,7 +150,7 @@
           </div>
         </div>
         <div class="card fade-in">
-          <img src="images/menu-drink.jpg" alt="ドリンク" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/menu-drink.jpg" alt="ドリンク" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">ドリンク</h3>
             <p class="card-text">コーヒー、紅茶、アルコール、ノンアルコールまで。シーシャに合うドリンクを幅広くご用意。</p>
@@ -160,7 +158,7 @@
           </div>
         </div>
         <div class="card fade-in">
-          <img src="images/menu-food.jpg" alt="フード" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/menu-food.jpg" alt="フード" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">フード</h3>
             <p class="card-text">ケーキや軽食など、シーシャのお供にぴったりなフードメニューをご用意しています。</p>
@@ -194,7 +192,7 @@
           <div class="price-item-unit">税込</div>
         </div>
       </div>
-      <div style="text-align:center;">
+      <div class="text-center">
         <a href="price/" class="btn btn-outline">料金詳細を見る</a>
       </div>
     </div>
@@ -226,13 +224,13 @@
             <span class="access-info-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
             <div>
               <div class="access-info-label">電話</div>
-              <div class="access-info-value" style="display:flex;align-items:center;gap:var(--space-md);flex-wrap:wrap;">
+              <div class="access-info-value access-phone-actions">
                 <a href="tel:05015635961">050-1563-5961</a>
-                <a href="tel:05015635961" class="btn btn-primary" style="padding:var(--space-xs) var(--space-lg);font-size:var(--font-size-sm);">今すぐ電話する</a>
+                <a href="tel:05015635961" class="btn btn-primary btn-sm">今すぐ電話する</a>
               </div>
             </div>
           </div>
-          <a href="access/" class="btn btn-dark" style="margin-top:1rem;">アクセス詳細を見る</a>
+          <a href="access/" class="btn btn-dark" style="margin-top:var(--space-md);">アクセス詳細を見る</a>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6!2d135.5146708!3d34.6877967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e73224f2a567%3A0xe76bcfad99c19d66!2z44K344O844K344AB5ZCJ5ZSu!5e0!3m2!1sja!2sjp!4v1743040000000!5m2!1sja!2sjp" width="100%" style="aspect-ratio:16/9;border:0;border-radius:var(--radius-lg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="シーシャカフェ吸暮 の地図"></iframe>
       </div>
@@ -240,7 +238,7 @@
   </section>
 
   <!-- お知らせ -->
-  <section class="section" style="background:var(--color-bg-2);">
+  <section class="section section-bg-2">
     <div class="container">
       <h2 class="section-title">News</h2>
       <span class="gold-line"></span>
@@ -251,7 +249,7 @@
           <a class="news-title" href="news/">公式サイトをリニューアルしました。</a>
         </div>
       </div>
-      <div style="text-align:center;">
+      <div class="text-center">
         <a href="news/" class="btn btn-dark">お知らせ一覧</a>
       </div>
     </div>
@@ -260,7 +258,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:44px;width:auto;display:block;margin-bottom:8px;"><span>シーシャカフェ吸暮</span></div>
+    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="footer-logo-img"><span>シーシャカフェ吸暮</span></div>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
       <ul>
         <li><a href="menu/">メニュー</a></li>

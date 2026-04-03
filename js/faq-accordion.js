@@ -1,7 +1,13 @@
 // ========== FAQアコーディオン ==========
-document.querySelectorAll('.faq-question').forEach(btn => {
+document.querySelectorAll('.faq-question').forEach((btn, index) => {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('.faq-answer');
+  const answerId = `faq-answer-${index}`;
+
+  btn.setAttribute('aria-controls', answerId);
+  answer.setAttribute('id', answerId);
+
   btn.addEventListener('click', () => {
-    const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
 
     // 他を全部閉じる

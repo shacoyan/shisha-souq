@@ -1,0 +1,29 @@
+.privacy-updated {
+  margin-bottom: var(--space-2xl);
+  color: var(--color-text-light);
+}
+
+.privacy-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.privacy-section h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-md);
+}
+
+.privacy-list {
+  padding-left: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.privacy-list li {
+  list-style: disc;
+  margin-bottom: var(--space-sm);
+}
+
+.privacy-list li:last-child {
+  margin-bottom: 0;
+}

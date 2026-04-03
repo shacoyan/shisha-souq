@@ -4,6 +4,12 @@ const flavorCards = document.querySelectorAll('.flavor-card');
 const noResult = document.getElementById('flavor-no-result');
 
 filterBtns.forEach(btn => {
+  if (btn.classList.contains('active')) {
+    btn.setAttribute('aria-pressed', 'true');
+  } else {
+    btn.setAttribute('aria-pressed', 'false');
+  }
+
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => {
       b.classList.remove('active');

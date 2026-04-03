@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #0D1B2A 0%, #1A2E42 60%, #0D1B2A 100%);
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -103,6 +106,17 @@
 .features-section {
   background: var(--color-dark);
   padding: var(--space-4xl) 0;
+}
+
+.features-section .section-title { color: var(--color-white); }
+
+.feature-icon-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ========== MENU PREVIEW ========== */

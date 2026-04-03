@@ -1,3 +1,35 @@
+.charge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-4xl);
+}
+
+.admission-box--column {
+  flex-direction: column;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.charge-sub {
+  font-size: var(--font-size-xs);
+  opacity: .6;
+}
+
+.charge-tax {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.charge-notice {
+  margin-top: calc(-1 * var(--space-3xl));
+  margin-bottom: var(--space-4xl);
+}
+
+.mt-xl {
+  margin-top: var(--space-xl);
+}
+
 .price-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

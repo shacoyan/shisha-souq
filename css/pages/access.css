@@ -40,6 +40,27 @@
 .access-block a { color: var(--color-primary); }
 .access-block a:hover { text-decoration: underline; }
 
+.icon-inline {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.access-contact-section {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.access-container-small-center {
+  max-width: 600px;
+  text-align: center;
+}
+
+.access-contact-title { color: var(--color-primary); margin-bottom: var(--space-md); }
+.access-contact-description { color: rgba(255,255,255,0.7); margin-bottom: var(--space-xl); }
+.access-contact-btn { display: inline-flex; align-items: center; gap: var(--space-sm); }
+.access-contact-hours { margin-top: var(--space-lg); color: rgba(255,255,255,0.5); font-size: var(--font-size-sm); }
+
 @media (max-width: 768px) {
   .access-layout { grid-template-columns: 1fr; }
 }

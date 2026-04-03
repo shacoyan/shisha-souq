@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <base href="/shisha-souq/">
+  <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>店舗紹介・コンセプト | Shisha Cafe Souq 大阪天満橋</title>
   <meta name="description" content="Shisha Cafe Souqの店舗紹介。ふかふかのソファでくつろげるシーシャカフェ。全席Wi-Fi・電源完備でリモートワークにも最適。大阪・天満橋駅徒歩3分。">
@@ -32,8 +33,9 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:40px;width:auto;vertical-align:middle;"></a>
+    <a href="./" class="site-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="header-logo-img"></a>
     <nav class="global-nav" id="globalNav" aria-label="グローバルナビゲーション">
+      <button class="nav-close" aria-label="メニューを閉じる"></button>
       <ul>
         <li><a href="./">HOME</a></li><li><a href="menu/">メニュー</a></li><li><a href="price/">料金</a></li>
         <li><a href="about/" aria-current="page">店舗紹介</a></li>
@@ -64,38 +66,38 @@
       <div class="about-concept">
         <div class="about-concept-text">
           <h2>日常から離れた、<br>至極のひとときを。</h2>
-          <span class="gold-line" style="margin:var(--space-lg) 0;display:block;width:40px;height:2px;background:var(--color-primary);"></span>
+          <span class="gold-line"></span>
           <p>シーシャカフェ吸暮は、大阪・天満橋に誕生したシーシャカフェです。「スーク」とはアラビア語で「市場」を意味し、さまざまな人々が集まり、語り合う場所を表しています。</p>
           <p>ふかふかのソファに身を沈め、心地よいシーシャの煙とともに、日常の喧騒を忘れてください。友人との会話、ひとりの読書、リモートワークの合間の一息、どんな過ごし方も歓迎します。</p>
           <p>100種類以上の厳選フレーバーと、丁寧に作られた一杯のドリンクで、あなただけの特別な時間をお過ごしください。</p>
         </div>
-        <img src="images/shisha.jpg" alt="店内イメージ" class="about-concept-img" style="width:100%;height:400px;object-fit:cover;border-radius:var(--radius-lg);">
+        <img src="images/shisha.jpg" alt="店内イメージ" class="about-concept-img">
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--color-bg-2);">
+  <section class="section section-bg-2">
     <div class="container">
       <h2 class="section-title">Features</h2>
       <span class="gold-line"></span>
       <p class="section-subtitle">スークの特徴</p>
       <div class="grid-3">
         <div class="card">
-          <img src="images/gallery-flavor-shelf.jpg" alt="100種類以上のフレーバー" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/gallery-flavor-shelf.jpg" alt="100種類以上のフレーバー" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">100種類以上のフレーバー</h3>
             <p class="card-text">フルーツ系・ミント系・スイーツ系・ミックスなど、豊富なラインナップ。ノンニコチンフレーバーも充実しているので、初めての方も安心してお楽しみいただけます。</p>
           </div>
         </div>
         <div class="card">
-          <img src="images/gallery-shisha-set.jpg" alt="全席Wi-Fi・電源完備" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/gallery-shisha-set.jpg" alt="全席Wi-Fi・電源完備" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">全席Wi-Fi・電源完備</h3>
             <p class="card-text">高速Wi-Fiと全席電源を完備。ノートPCやタブレットでの作業も快適に行えます。リモートワークや勉強など、長時間の滞在にも対応しています。</p>
           </div>
         </div>
         <div class="card">
-          <img src="images/gallery-main-floor.jpg" alt="ゆったりソファ空間" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md) var(--radius-md) 0 0;">
+          <img src="images/gallery-main-floor.jpg" alt="ゆったりソファ空間" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">ゆったりソファ空間</h3>
             <p class="card-text">全席ふかふかのソファを完備。寝転びながらシーシャを楽しめる席も。ゆったりとした空間設計で、長時間でも疲れにくい環境を整えています。</p>
@@ -111,25 +113,25 @@
       <span class="gold-line"></span>
       <p class="section-subtitle">店内の様子</p>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="images/floor_center.jpg" alt="店内フロア" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="gallery-item"><img src="images/shisha.jpg" alt="シーシャ" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="gallery-item"><img src="images/gallery-counter.jpg" alt="カウンター" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="gallery-item"><img src="images/flavor.jpg" alt="フレーバー" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="gallery-item"><img src="images/gallery-private-room.jpg" alt="店内スペース" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="gallery-item"><img src="images/menu-food.jpg" alt="フードメニュー" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="gallery-item"><img src="images/floor_center.jpg" alt="店内フロア" class="gallery-img"></div>
+        <div class="gallery-item"><img src="images/shisha.jpg" alt="シーシャ" class="gallery-img"></div>
+        <div class="gallery-item"><img src="images/gallery-counter.jpg" alt="カウンター" class="gallery-img"></div>
+        <div class="gallery-item"><img src="images/flavor.jpg" alt="フレーバー" class="gallery-img"></div>
+        <div class="gallery-item"><img src="images/gallery-private-room.jpg" alt="店内スペース" class="gallery-img"></div>
+        <div class="gallery-item"><img src="images/menu-food.jpg" alt="フードメニュー" class="gallery-img"></div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--color-bg-2);">
-    <div class="container" style="max-width:800px;">
+  <section class="section section-bg-2">
+    <div class="container container-narrow">
       <div class="staff-message">
         <blockquote>「お越しいただいた全ての方に、非日常のくつろぎをお届けしたい。シーシャを通じて、人と人がつながる温かい場所でありたい。そんな想いを胸に、スークを営んでいます。どうぞ気軽にお立ち寄りください。」</blockquote>
         <cite>— Shisha Cafe Souq スタッフ一同</cite>
       </div>
 
-      <div style="margin-top:var(--space-3xl);">
-        <h2 style="font-size:var(--font-size-xl);margin-bottom:var(--space-xl);text-align:center;">店舗概要</h2>
+      <div class="mt-3xl">
+        <h2 class="subsection-title text-center">店舗概要</h2>
         <table class="info-table">
           <tbody>
             <tr><th>店名</th><td>シーシャカフェ吸暮</td></tr>
@@ -149,7 +151,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" style="height:44px;width:auto;display:block;margin-bottom:8px;"><span>シーシャカフェ吸暮</span></div>
+    <div class="footer-logo"><img src="images/logo.png" alt="シーシャカフェ吸暮" class="footer-logo-img"><span>シーシャカフェ吸暮</span></div>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
       <ul>
         <li><a href="menu/">メニュー</a></li><li><a href="price/">料金</a></li><li><a href="about/">店舗紹介</a></li>
@@ -176,3 +178,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

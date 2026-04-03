@@ -3,18 +3,13 @@ const hamburger = document.getElementById('hamburger');
 const globalNav = document.getElementById('globalNav');
 
 if (hamburger && globalNav) {
+  const navClose = globalNav.querySelector('.nav-close');
+
   function openMenu() {
     hamburger.classList.add('active');
     globalNav.classList.add('open');
     hamburger.setAttribute('aria-expanded', 'true');
     document.body.classList.add('no-scroll');
-
-    // 閉じるボタンを動的追加
-    const closeBtn = document.createElement('button');
-    closeBtn.className = 'nav-close';
-    closeBtn.setAttribute('aria-label', 'メニューを閉じる');
-    closeBtn.addEventListener('click', closeMenu);
-    globalNav.appendChild(closeBtn);
   }
 
   function closeMenu() {
@@ -22,10 +17,10 @@ if (hamburger && globalNav) {
     globalNav.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('no-scroll');
+  }
 
-    // 閉じるボタンを削除
-    const closeBtn = globalNav.querySelector('.nav-close');
-    if (closeBtn) closeBtn.remove();
+  if (navClose) {
+    navClose.addEventListener('click', closeMenu);
   }
 
   hamburger.addEventListener('click', () => {
@@ -57,9 +52,9 @@ const header = document.querySelector('.site-header');
 if (header) {
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
+      header.classList.add('scrolled');
     } else {
-      header.style.boxShadow = 'none';
+      header.classList.remove('scrolled');
     }
   }, { passive: true });
 }
